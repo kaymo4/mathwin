@@ -12,7 +12,7 @@
 Spree.config do |config|
   # Example:
   # Uncomment to stop tracking inventory levels in the application
-  # config.track_inventory_levels = false
+   config.track_inventory_levels = false
 end
 
 # Configure Spree Dependencies
@@ -24,6 +24,7 @@ Spree.dependencies do |dependencies|
   # Example:
   # Uncomment to change the default Service handling adding Items to Cart
   # dependencies.cart_add_item_service = 'MyNewAwesomeService'
+  #
 end
 
 # Spree::Api::Dependencies.storefront_cart_serializer = 'MyRailsApp::CartSerializer'

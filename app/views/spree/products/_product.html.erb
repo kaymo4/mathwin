@@ -9,12 +9,14 @@
           <%= content_tag(:span, truncate(product.name, length: 50), class: 'info mt-3 d-block', title: product.name) %>
         <% end %>
       </div>
+
       <div class="card-footer text-center">
         <span class="price selling lead" content="<%= price.nil? ? 0 : price.to_d %>">
           <%= display_price(product) %>
         </span>
         <span content="<%= current_currency %>"></span>
       </div>
-    <% end %>
+
+  <% end %>
   </div>
 </div>
